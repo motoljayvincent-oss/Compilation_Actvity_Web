@@ -1,0 +1,124 @@
+/* Don't Modify */
+:root {
+  --clr-base-400: #5e5e5e;
+  --clr-base-500: #494949;
+
+  --clr-ui-300: #f8e2ff;
+  --clr-ui-400: #580d3a;
+  --clr-ux-300: #e2ffea;
+  --clr-ux-400: #115926;
+  --clr-dev-300: #e2fcff;
+  --clr-dev-400: #024f4f;
+
+  --clr-accent-400: #7e47c5;
+
+  --ff-accent: "Podkova", serif;
+  --ff-base: "Open Sans", sans-serif;
+
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-500: 2rem;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  --border-radius: 0.75rem;
+}
+
+/* /////////////////
+   Layout related
+   no need to touch any of this
+//////////////////*/
+
+/* Don't Modify */
+
+/* Start Here */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.candidates {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+}
+
+.candidate img {
+  width: 150px;
+  height: 150px;
+  border-radius: var(--border-radius);
+  margin-left: 15px;
+}
+
+.social img {
+  width: 15px;
+}
+
+.candidate {
+  box-shadow: 1px 1px 5px gray;
+  height: 240px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  position: relative;
+}
+
+.card {
+  flex: 1;
+  margin: 10px;
+  object-fit: cover;
+  margin-top: -20px;
+}
+
+.social {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  top: 8em;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: var(--clr-accent-400);
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: var(--border-radius);
+  position: absolute;
+  top: 11.7em;
+  right: 2em;
+  text-transform: uppercase;
+}
+
+.tag {
+  background-color: rgb(224, 252, 183);
+  padding: 4px;
+  border-radius: var(--border-radius);
+}
+
+.tags {
+  background-color: #fbc0e3;
+  padding: 4px;
+  border-radius: var(--border-radius);
+  margin-right: 10px;
+}
+
+.blue {
+  background-color: hsl(184, 80%, 76%);
+  padding: 4px;
+  border-radius: var(--border-radius);
+  margin-left: 10px;
+}
+
+.name {
+  font-family: var(--ff-accent);
+}
+
+.roles {
+  font-family: var(--ff-base);
+}
+
+.btn {
+  font-family: var(--ff-base);
+}
